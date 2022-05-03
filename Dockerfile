@@ -1,7 +1,5 @@
-FROM evandarwin/lua:latest
-RUN luarocks install argparse && \
-    luarocks install luafilesystem && \
-    luarocks install luacheck
+FROM ghcr.io/illeniumstudios/luacheck:v0.26.1-backticks 
+
 RUN mkdir -p /luacheck-fivem
 ADD . /luacheck-fivem/
 RUN apk add --no-cache yarn nodejs && \
