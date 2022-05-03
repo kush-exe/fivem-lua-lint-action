@@ -1,14 +1,15 @@
 #!/bin/sh -l
-LUACHECK_ARGS="--config /luacheck-fivem/.luacheckrc $1"
+CONFIG_PATH=$3
+LUACHECK_ARGS="--default-config $CONFIG_PATH $1"
 LUACHECK_PATH="$2"
-LUACHECK_CAPTURE_OUTFILE="$GITHUB_WORKSPACE/$3"
+LUACHECK_CAPTURE_OUTFILE="$GITHUB_WORKSPACE/$4"
 
 # extra luacheck definitions
-if [[ ! -z "$4" ]]; then
+if [[ ! -z "$5" ]]; then
   OLD_DIR=$(pwd)
   # regenerate with extras
   cd /luacheck-fivem/
-  yarn build "$4"
+  yarn build "$5"
   # go back
   cd $OLD_DIR
 fi
