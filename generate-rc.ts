@@ -147,7 +147,7 @@ fetchAllNatives().then(natives => {
 
   template = template.replace(/%%EXTRA%%/g, extraLibs)
 
-  fs.writeFileSync(path.join(__dirname, ".luacheckrc"), template)
+  fs.writeFileSync(path.join(__dirname, ".luacheckrc.default"), template)
   console.log(ansi.gray(`=`.repeat(29)))
   console.log(
     ansi.gray(
