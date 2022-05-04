@@ -46,7 +46,7 @@ stds.cfx_sv = {
     }
 }
 
-stds. = {
+stds.cfx_cl_deprecated = {
     read_globals = {
         "World3dToScreen2d"
     }
