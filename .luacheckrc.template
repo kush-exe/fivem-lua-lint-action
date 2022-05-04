@@ -25,6 +25,7 @@ stds.cfx = {
         "TriggerEvent",
         "RemoveEventHandler",
         json = { fields = {"encode", "decode"} },
+        promise = { fields = {} },
         table = { fields = { "create" } },
         %%SHARED_GLOBALS%%
     }
@@ -139,8 +140,8 @@ files["**/server/**/*.lua"].std = "max+cfx+cfx_sv%%EXTRA%%"
 files["**/shared.lua"].std="max+cfx+cfx_sv+cfx_cl%%EXTRA%%"
 files["**/shared/**/*.lua"].std="max+cfx+cfx_sv+cfx_cl%%EXTRA%%"
 -- default
-max_line_length = 140
-max_cyclomatic_complexity = 100
+max_line_length = 1100
+max_cyclomatic_complexity = 105
 color = true
 ignore = {'611', '111', '614'}
 std = "max+cfx+cfx_sv+cfx_cl%%EXTRA%%"
