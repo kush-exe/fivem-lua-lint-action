@@ -54,7 +54,14 @@ stds.cfx_cl_deprecated = {
 
 stds.cfx_cl = {
     read_globals = {
-        LocalPlayer = { fields = { } },
+        LocalPlayer = {
+            fields = {
+                state = {
+                    "set",
+                    "isLoggedIn",
+                }
+            }
+        },
         "TriggerServerEvent",
         "RegisterNUICallback",
         "SendNUIMessage",
