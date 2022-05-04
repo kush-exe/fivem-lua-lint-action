@@ -25,6 +25,7 @@ stds.cfx = {
         "TriggerEvent",
         "RemoveEventHandler",
         json = { fields = {"encode", "decode"} },
+        table = { fields = { "create" } },
         %%SHARED_GLOBALS%%
     }
 }
@@ -85,6 +86,39 @@ stds.esx_legacy = {
                 "query",
             }
         }
+    }
+}
+
+stds.mysql = {
+    read_globals = {
+        MySQL = {
+            fields = {
+                "query",
+                Sync = {
+                    fields = {
+                        "prepare",
+                        "fetchScalar",
+                        "fetchSingle",
+                        "fetchAll"
+                    }
+                },
+                Async = {
+                    fields = {
+                        "prepare",
+                        "transaction",
+                        "insert",
+                        "execute",
+                    }
+                }
+            }
+        }
+    }
+}
+
+stds.polyzone = {
+    read_globals = {
+        "ComboZone",
+        "BoxZone"
     }
 }
 
