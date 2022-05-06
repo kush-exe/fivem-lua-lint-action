@@ -1,4 +1,4 @@
-FROM ghcr.io/illeniumstudios/luacheck:v0.26.1-backticks 
+FROM ghcr.io/illeniumstudios/luacheck:v0.26.1-fivem-lua
 
 RUN mkdir -p /luacheck-fivem
 ADD . /luacheck-fivem/
