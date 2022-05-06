@@ -184,7 +184,7 @@ stds.polyzone = {
     }
 }
 
-stds.qb-locales = {
+stds.qblocales = {
     read_globals = {
         Locale = {
             fields = {
