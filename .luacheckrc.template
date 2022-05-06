@@ -142,17 +142,29 @@ stds.mysql = {
         MySQL = {
             fields = {
                 "query",
+                "update",
+                "scalar",
+                "single",
+                "insert",
+                "transaction",
+                "prepare",
                 Sync = {
                     fields = {
                         "prepare",
                         "fetchScalar",
                         "fetchSingle",
-                        "fetchAll"
+                        "fetchAll",
+                        "transaction",
+                        "insert",
+                        "execute",
                     }
                 },
                 Async = {
                     fields = {
                         "prepare",
+                        "fetchScalar",
+                        "fetchSingle",
+                        "fetchAll",
                         "transaction",
                         "insert",
                         "execute",
