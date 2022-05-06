@@ -184,6 +184,23 @@ stds.polyzone = {
     }
 }
 
+stds.qb-locales = {
+    read_globals = {
+        Locale = {
+            fields = {
+                "new",
+                "extend",
+                "clear",
+                "replace",
+                "locale",
+                "t",
+                "has",
+                "delete",
+            }
+        }
+    }
+}
+
 -- manifest
 files["**/fxmanifest.lua"].std = "max+cfx_manifest"
 files["**/__resource.lua"].std = "max+cfx_manifest"
