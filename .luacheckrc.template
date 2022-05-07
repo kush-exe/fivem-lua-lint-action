@@ -201,6 +201,18 @@ stds.qblocales = {
     }
 }
 
+stds.menuv = {
+    read_globals = {
+        MenuV = {
+            fields = {
+                "CreateMenu",
+                "OpenMenu",
+                "CloseMenu",
+            }
+        }
+    }
+}
+
 -- manifest
 files["**/fxmanifest.lua"].std = "max+cfx_manifest"
 files["**/__resource.lua"].std = "max+cfx_manifest"
