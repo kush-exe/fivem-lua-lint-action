@@ -2,7 +2,7 @@
 
 This GitHub Action runs `luacheck` on your Lua codebase against known FiveM natives for any GitHub repository!
 
-> Note: The FiveM Lua backtick syntax is **NOT** supported, please use `GetHashKey()` instead.
+> Now supports FiveM Lua backtick syntax.
 
 ---
 
@@ -13,17 +13,16 @@ To use this in your GitHub repository, create the following file:
 > **.github/workflows/lint.yml**
 
 ```yml
-name: CI
+name: Lint
 on: [push, pull_request]
 jobs:
   lint:
-    name: Lint Lua Scripts
+    name: Lint Resource
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: Lint
-        uses: GoatG33k/fivem-lua-lint-action@v1
+        uses: iLLeniumStudios/fivem-lua-lint-action@v2
 ```
 
 This will automatically run `luacheck` for both commits and pull requests!
@@ -40,23 +39,25 @@ which outputs a JUnit results file:
 > **.github/workflows/lint.yml**
 
 ```yml
-name: CI
+name: Lint
 on: [push, pull_request]
 jobs:
   lint:
-    name: Lint Lua Scripts
+    name: Lint Resource
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
       - name: Lint
-        uses: GoatG33k/fivem-lua-lint-action@v1
+        uses: iLLeniumStudios/fivem-lua-lint-action@v2
         with:
           capture: "junit.xml"
           args: "-t --formatter JUnit"
-      - name: Publish Test Report
-        uses: mikepenz/action-junit-report@v2
+      - name: Generate Lint Report
+        if: always()
+        uses: mikepenz/action-junit-report@v3
         with:
           report_paths: "**/junit.xml"
-          fail_on_failure: 0
+          check_name: Linting Report
+          fail_on_failure: false
+
 ```
