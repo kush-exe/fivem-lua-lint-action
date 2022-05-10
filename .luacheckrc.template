@@ -1,4 +1,7 @@
 stds.cfx = {
+    globals = {
+        string = { other_fields = true }
+    },
     read_globals = {
         Citizen = {
             fields = {
