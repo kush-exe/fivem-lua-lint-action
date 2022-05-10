@@ -232,7 +232,7 @@ files["**/shared.lua"].std="max+cfx+cfx_sv+cfx_cl_deprecated+cfx_cl%%EXTRA%%"
 files["**/shared/**/*.lua"].std="max+cfx+cfx_sv+cfx_cl_deprecated+cfx_cl%%EXTRA%%"
 -- default
 max_line_length = 1100
-max_cyclomatic_complexity = 105
+max_cyclomatic_complexity = 200
 color = true
 ignore = {'611', '111', '614'}
 std = "max+cfx+cfx_sv+cfx_cl_deprecated+cfx_cl%%EXTRA%%"
