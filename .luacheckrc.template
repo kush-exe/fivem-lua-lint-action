@@ -203,6 +203,12 @@ stds.qblocales = {
     }
 }
 
+stds.qbgarages = {
+    read_globals = {
+        "Garages"
+    }
+}
+
 stds.menuv = {
     read_globals = {
         MenuV = {
