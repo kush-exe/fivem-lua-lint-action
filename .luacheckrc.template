@@ -182,6 +182,7 @@ stds.mysql = {
 
 stds.polyzone = {
     read_globals = {
+        "PolyZone",
         "ComboZone",
         "BoxZone",
         "EntityZone",
