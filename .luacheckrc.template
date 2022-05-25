@@ -226,6 +226,13 @@ stds.menuv = {
                 "CreateMenu",
                 "OpenMenu",
                 "CloseMenu",
+                "T",
+                "InheritMenu",
+                "GetMenu",
+                "Refresh",
+                "CloseAll",
+                "AddControlKey",
+                "IsNamespaceAvailable"
             }
         }
     }
