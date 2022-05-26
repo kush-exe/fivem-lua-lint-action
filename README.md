@@ -66,14 +66,14 @@ jobs:
 
 Following extra libs are supported by the linter natively:
 
-| Lib          | Description                                                                          |   |   |   |
-|--------------|--------------------------------------------------------------------------------------|---|---|---|
-| mysql        | Globals for oxmysql library (https://github.com/overextended/oxmysql)                |   |   |   |
-| vmenu        | Globals for vmenu (https://github.com/TomGrobbe/vMenu)                               |   |   |   |
-| polyzone     | Globals for polyzone (https://github.com/mkafrin/PolyZone)                           |   |   |   |
-| qblocales    | Globals for qb-core locales system (https://github.com/qbcore-framework/qb-core)     |   |   |   |
-| qbgarages    | Globals for qb-garages config (https://github.com/qbcore-framework/qb-garages)       |   |   |   |
-| qbapartments | Globals for qb-apartments config (https://github.com/qbcore-framework/qb-apartments) |   |   |   |
+| Lib          | Description                                                                          |
+|--------------|--------------------------------------------------------------------------------------|
+| mysql        | Globals for oxmysql library (https://github.com/overextended/oxmysql)                |
+| vmenu        | Globals for vmenu (https://github.com/TomGrobbe/vMenu)                               |
+| polyzone     | Globals for polyzone (https://github.com/mkafrin/PolyZone)                           |
+| qblocales    | Globals for qb-core locales system (https://github.com/qbcore-framework/qb-core)     |
+| qbgarages    | Globals for qb-garages config (https://github.com/qbcore-framework/qb-garages)       |
+| qbapartments | Globals for qb-apartments config (https://github.com/qbcore-framework/qb-apartments) |
 
 In case you're using any of these as a dependency to your resource, you will need to add them to the lint action using the argument `extra_libs`.
 For example if you're using polyzone and oxmysql in your resource, this is how your action would look like:
