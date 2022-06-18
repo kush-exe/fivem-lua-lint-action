@@ -301,6 +301,7 @@ ignore = {
     "521", -- Unused label.
     "531", -- Left-hand side of an assignment is too short.
     "532", -- Left-hand side of an assignment is too long.
+    "542", -- Empty if block.
     "571", -- A numeric for loop goes from #(expr) down to 1 or less without negative step.
     "611", -- A line consists of nothing but whitespace.
     "612", -- A line contains trailing whitespace.
